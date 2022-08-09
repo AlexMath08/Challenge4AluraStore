@@ -58,6 +58,28 @@
     border: 1px solid #555;
   }
 
+  @media (max-width: 767px){
+    .input__search input[type=text] 
+    {
+    position: absolute;
+    top: 10%;
+    width: 80%;
+    right: 10%;
+    }
+
+    .main-header__title
+    {
+        position: absolute;
+        left: 12%;
+        font-size: 18px;
+    }
+
+    .img__menu
+    {
+        position: relative;
+    }
+  }
+
   /*Estilos para tablet*/
   @media screen and (min-width:768px)
   {
@@ -80,12 +102,30 @@ right: 70%;
   
  @media screen and (min-width:1024px)
  {
+
+header
+{
+    margin: auto;
+    width: 98%;
+}
+
+.container
+{
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    margin: auto;
+    padding: 1rem 0 1rem 0;
+    width: 80%;
+}
+
 .input__search input[type=text] 
 {
-position: relative;
-width: 50%;
+position: absolute;
+width: 450px;
+top: 30px;
 height: 35px;
-right: 22%;
+left: 120px;
 margin: 0 220px;
 }
 

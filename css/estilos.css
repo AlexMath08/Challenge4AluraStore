@@ -10,6 +10,7 @@
 
 * {
 box-sizing: border-box;
+
 }
 
 body
@@ -144,7 +145,7 @@ img
   }
   
   .main {
-    padding: 0 20px;
+    padding: 0 2rem;
   }
   
   /* ESTILOS DE SLIDER */
@@ -335,6 +336,7 @@ img
     width: 100%;
     display: block;
     padding: 20px;
+    color: #ccc;
     border: 1px solid #555;
   }
 
@@ -483,6 +485,15 @@ img
     {
       left: 10%;
     }
+
+    .input__search input[type=text] 
+{
+position: absolute;
+top: 25px;
+right: 450px;
+  width: 40%;
+ 
+}
 
    
   }

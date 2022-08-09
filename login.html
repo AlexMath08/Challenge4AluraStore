@@ -16,7 +16,7 @@
   <header class="main-header">
     <div class="container container--flex">
       <div class="main-header__container">
-        <span class="icon-menu"id="btn-menu"><img src="/imagenes/Vector.png" alt="" class="img__menu"></span>
+        <span class="icon-menu"id="btn-menu"><a href="index.html"><img src="/imagenes/Vector.png" alt="" class="img__menu"></span></a>
         <h1 class="main-header__title">Alura<span>Geek</span></h1>
         <div id="container__search" class="input__search">
             <input type="text" name="search" id="inputSearch" placeholder="¿Qué deseas buscar?">
@@ -26,12 +26,13 @@
   <main>
     <div class="title__sesion">
         <h1 class="inicio__sesion">Iniciar Sesión</h1>
-        <form action="" class="form__sesion">
-            <input type="text" class="footer__input__sesion" placeholder="Escriba su correo electronico">
+        <form action="" class="form__sesion" method="post" onsubmit="return validar();">
+            <input type="email" name="email" id="email" class="footer__input__sesion" placeholder="Escriba su correo electronico" required>
             <br>
-            <input type="password" class="footer__input__sesion" placeholder="Escriba su contraseña">
+            <input type="password" name="password" id="password" class="footer__input__sesion" placeholder="Escriba su contraseña" required>
             <br>
-            <button class="button__login__sesion">Entrar</button>
+            <!---<button class="button__login__sesion" id="iniciar__sesion">Entrar</button>--->
+          <a href="productos.html" button class="button__login__sesion" id="iniciar__sesion">Entrar</a>
         </form>
     </div>
   </main>
@@ -52,16 +53,18 @@
 
     <div class="footer__section">
       <h2 class="footer__title">Hable con nosotros</h2>
-      <input type="text" class="footer__input" placeholder="Nombre">
-      <textarea name="" id="" cols="30" rows="10" class="footer__input" placeholder="Escribe tu mensaje"></textarea>
+      <form action="">
+      <input type="text" class="footer__input" placeholder="Nombre" id="nombre" required maxlength="40">
+      <textarea name="" id="mensaje" cols="30" rows="10" class="footer__input" placeholder="Escribe tu mensaje" required maxlength="120"></textarea>
       <button class="button footer__input" >Enviar Mensaje</button>
+    </form>
     </div>
     <p class="copy">© 2022. Desarrollado por Alexander Peñaloza</p>
 
   </footer>
   
-  <script src="js/slider.js"></script>
-  <script src="js/menu.js"></script>
+  <script src="/js/formulario.js"></script>
+  <script src="/js/login.js"></script>
 </body>
 
 </html>

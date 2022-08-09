@@ -17,11 +17,9 @@
   <header class="main-header">
     <div class="container container--flex">
       <div class="main-header__container">
-        <span class="icon-menu"id="btn-menu"><img src="/imagenes/Vector.png" alt="" class="img__menu img__agregar"></span>
+        <span class="icon-menu"id="btn-menu"><a href="index.html"><img src="/imagenes/Vector.png" alt="" class="img__menu img__agregar"></a></span>
         <h1 class="main-header__title title__agregar">Alura<span>Geek</span></h1>
-        <div class="login icon__menu">
-            <button class="button__login btn__agregar">Agregar Producto</button>
-        </div>
+        
       </div>
       <div id="container__search" class="input__search sh__agregar">
         <input type="text" name="search" id="inputSearch" placeholder="¿Qué deseas buscar?">
@@ -30,18 +28,18 @@
   <main>
     <div class="title__sesion sesion__agregar">
         <h1 class="inicio__sesion agregar__h1">Agregar nuevo producto</h1>
-        <form action="" class="form__sesion">
-            <input type="text" class="footer__input__sesion" placeholder="Url de la imagen">
+        <form action="" class="form__sesion" id="product__adicionar">
+            <input type="text" class="footer__input__sesion" placeholder="Url de la imagen" required>
             <br>
-            <input type="text" class="footer__input__sesion" placeholder="Categoria">
+            <input type="text" class="footer__input__sesion" placeholder="Categoria" required>
             <br>
-            <input type="text" class="footer__input__sesion" placeholder="Nombre del producto">
+            <input type="text" class="footer__input__sesion" placeholder="Nombre del producto" required>
             <br>
-            <input type="text" class="footer__input__sesion" placeholder="Precio del producto">
+            <input type="text" class="footer__input__sesion" placeholder="Precio del producto" required>
             <br>
-            <textarea name="" id="" cols="30" rows="0" class="footer__input__sesion" placeholder="Descripción del producto"></textarea>
+            <textarea name="" id="" cols="30" rows="0" class="footer__input__sesion" placeholder="Descripción del producto" required></textarea>
             <br>
-            <button class="button__login__sesion">Agregar producto</button>
+            <button class="button__login__sesion" id="adicionar__producto">Agregar producto</button>
         </form>
     </div>
   </main>
@@ -62,8 +60,8 @@
 
     <div class="footer__section">
       <h2 class="footer__title">Hable con nosotros</h2>
-      <input type="text" class="footer__input" placeholder="Nombre">
-      <textarea name="" id="" cols="30" rows="10" class="footer__input" placeholder="Escribe tu mensaje"></textarea>
+      <input type="text" class="footer__input" placeholder="Nombre" required maxlength="40">
+      <textarea name="" id="" cols="30" rows="10" class="footer__input" placeholder="Escribe tu mensaje" required maxlength="120"></textarea>
       <button class="button footer__input" >Enviar Mensaje</button>
     </div>
     <p class="copy">© 2022. Desarrollado por Alexander Peñaloza</p>
@@ -72,6 +70,7 @@
   
   <script src="js/slider.js"></script>
   <script src="js/menu.js"></script>
+  <script src="/js/adicionar.js"></script>
 </body>
 
 </html>
